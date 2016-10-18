@@ -25,6 +25,7 @@ github_username:  AlexNeises
 sass:
   style: compressed
 markdown: kramdown
+excerpt_separator: separator-string
 gems:
   - jekyll-feed
 exclude:

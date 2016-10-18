@@ -1,7 +1,7 @@
 ---
 title: Python Watermarks
 ---
-~~~ python
+{% highlight python linenos %}
 from PIL import Image
 
 def create_watermark(image_path, final_image_path, watermark, hires=False):
@@ -28,4 +28,4 @@ def create_watermark(image_path, final_image_path, watermark, hires=False):
 
 if __name__ == '__main__':
     create_watermark('main_image.jpg', 'main_with_watermark.jpg', 'watermark.png', True)
-~~~
+{% endhighlight %}

@@ -1,5 +1,12 @@
 .highlight {
 	color: #D0D0D0;
+
+	.lineno {
+		border-radius: 0px;
+		box-shadow: none;
+		padding-right: 0;
+		padding-left: 0;
+	}
 	
 	.hll {
 		background-color: #404040;
