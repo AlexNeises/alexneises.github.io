@@ -3,8 +3,8 @@ site: Board Jekyll Theme
 exclude: [.nojekyll, .git, .gitignore]
 keep_files: [.nojekyll, .git, .gitignore]
 
-domain: alexneises.github.io
-url: https://alexneises.github.io
+domain: gallery.nexview.io
+url: https://gallery.nexview.io
 baseurl: 
 
 collections:
