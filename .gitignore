@@ -1,0 +1,5 @@
+!assets/
+assets/*
+!assets/css
+!assets/js
+config.codekit3
