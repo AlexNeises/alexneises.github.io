@@ -1,0 +1,101 @@
+site: Board Jekyll Theme
+
+exclude: [.nojekyll, .git, .gitignore]
+keep_files: [.nojekyll, .git, .gitignore]
+
+domain: alexneises.github.io
+url: https://alexneises.github.io
+baseurl: 
+
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+  posts:
+    output: true
+    permalink: /blog/:slug/
+  projects:
+    output: true
+    permalink: /project/:slug/
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  -
+    scope:
+      path: "assets/portra400/2021-08-27/thumbnails"
+    values:
+      thumbnails: true
+      '2021-08-27': true
+  -
+    scope:
+      path: "assets/portra400/2021-08-27/fullsize"
+    values:
+      fullsize: true
+      '2021-08-27': true
+  -
+    scope:
+      path: "assets/ektar100/2021-07-07/thumbnails"
+    values:
+      thumbnails: true
+      '2021-07-07': true
+  -
+    scope:
+      path: "assets/ektar100/2021-07-07/fullsize"
+    values:
+      fullsize: true
+      '2021-07-07': true
+  -
+    scope:
+      path: "assets/ektar100/2021-07-08/thumbnails"
+    values:
+      thumbnails: true
+      '2021-07-08': true
+  -
+    scope:
+      path: "assets/ektar100/2021-07-08/fullsize"
+    values:
+      fullsize: true
+      '2021-07-08': true
+
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+grid_alignments:
+  - top
+  - center
+  - bottom

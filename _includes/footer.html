@@ -1,0 +1,33 @@
+<div id="custom-trigger-1-social">
+	<div class="img-caption"></div>
+	<p class="img-desc"></p>
+	<ul>
+		<li>Download: </li>
+		<li>
+			<a href="/" external class="js-no-ajax new-tab large">Large</a>
+		</li>
+		<li>
+			<a href="/" external class="js-no-ajax new-tab small">Small</a>
+		</li>
+	</ul>
+</div>
+<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="footer__content">
+
+			<p class="footer__text">{{ site.data.settings.footer_settings.footer_tagline }}</p>
+
+			<div class="footer__copyright">
+				<span>© {{ 'now' | date: "%Y" }} {{ site.data.settings.basic_settings.copyright }}</span>
+				<!-- <a href="https://jekyllthemes.io" target="_blank">Jekyll Themes</a> -->
+			</div>
+
+			{% include socials.html %}
+
+		</div>
+
+	</div>
+
+</footer>
